@@ -10,7 +10,7 @@
 <BODY>
 <CENTER><H1>TESTE</H1></CENTER>  
     <a-scene
-      mindar-image="imageTargetSrc: https://raw.githubusercontent.com/MirkosMartins/sbqt2025/main/c60.mind; maxTrack: 1"
+      mindar-image="imageTargetSrc: https://raw.githubusercontent.com/MirkosMartins/sbqt2025/main/nanoCarbon.mind; maxTrack: 3"
       color-space="sRGB"
       renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false"
@@ -23,6 +23,16 @@
         <a-asset-item
           id="fullerene"
           src="https://raw.githubusercontent.com/MirkosMartins/sbqt2025/main/C60.glb"
+        ></a-asset-item>
+
+    <a-asset-item
+          id="ntc"
+          src="https://raw.githubusercontent.com/MirkosMartins/sbqt2025/main/ntc.glb"
+        ></a-asset-item>
+
+    <a-asset-item
+          id="graphene"
+          src="https://raw.githubusercontent.com/MirkosMartins/sbqt2025/main/graphene.glb"
         ></a-asset-item>
       </a-assets>
 
@@ -47,6 +57,25 @@
           src="#fullerene">
         </a-gltf-model>
       </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-gltf-model
+          rotation="0 0 0"
+          position="0 0 0"
+          scale="0.5 0.5 0.5"
+          src="#ntc">
+        </a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model
+          rotation="0 0 0"
+          position="0 0 0"
+          scale="0.5 0.5 0.5"
+          src="#graphene">
+        </a-gltf-model>
+      </a-entity>
+        
     </a-scene>
 </BODY>
 </HTML>
