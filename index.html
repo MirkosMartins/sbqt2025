@@ -9,5 +9,29 @@
 </HEAD>
 <BODY>
 <CENTER><H1>TESTE</H1></CENTER>  
+    <a-scene
+      mindar-image="imageTargetSrc: https://raw.githubusercontent.com/MirkosMartins/sbqt2025/main/c60.mind; maxTrack: 1"
+      color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-assets>
+        <a-asset-item
+          id="fullerene"
+          src="https://raw.githubusercontent.com/MirkosMartins/sbqt2025/main/c60.glb"
+        ></a-asset-item>
+      </a-assets>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model
+          rotation="0 90 0"
+          position="0 0 0"
+          scale="1 1 1"
+          src="#fullerene">
+          <!--animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
+          -->
+          </a-gltf-model>
+        </a-entity>
 </BODY>
 </HTML>
